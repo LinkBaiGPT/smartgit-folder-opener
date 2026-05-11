@@ -1,6 +1,6 @@
 # Open repository in SmartGit
 
-Open repository in SmartGit is a local VS Code-compatible extension stored under `utils/smartgit-context-menu`.
+Open repository in SmartGit is a VS Code-compatible extension that adds an Explorer context menu action for opening the selected Git repository in SmartGit.
 
 It adds an Explorer context menu command:
 
@@ -54,17 +54,16 @@ Examples:
 
 ## Build
 
-Run these commands from this extension directory:
+From the cloned extension repository, run:
 
 ```powershell
-cd utils\smartgit-context-menu
 npx --yes @vscode/vsce package
 ```
 
 The command generates a `.vsix` package, for example:
 
 ```text
-smartgit-folder-opener-0.0.3.vsix
+smartgit-folder-opener-0.0.5.vsix
 ```
 
 ## Install Locally
@@ -72,19 +71,19 @@ smartgit-folder-opener-0.0.3.vsix
 Install into Antigravity:
 
 ```powershell
-antigravity --install-extension .\smartgit-folder-opener-0.0.3.vsix --force
+antigravity --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
 ```
 
 Install into VS Code:
 
 ```powershell
-code --install-extension .\smartgit-folder-opener-0.0.3.vsix --force
+code --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
 ```
 
 Install into Cursor:
 
 ```powershell
-cursor --install-extension .\smartgit-folder-opener-0.0.3.vsix --force
+cursor --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
 ```
 
 On macOS, use the same commands from a shell where the target editor command is available.

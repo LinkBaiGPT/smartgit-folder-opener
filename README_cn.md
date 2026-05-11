@@ -1,6 +1,6 @@
 # Open repository in SmartGit
 
-Open repository in SmartGit 是一个放在 `utils/smartgit-context-menu` 目录下的本地 VS Code 兼容扩展。
+Open repository in SmartGit 是一个 VS Code 兼容扩展，可在资源管理器右键菜单中用 SmartGit 打开选中的 Git 仓库。
 
 它会在资源管理器右键菜单中增加命令：
 
@@ -56,17 +56,16 @@ macOS 示例：
 
 ## 打包
 
-在扩展目录执行：
+在克隆后的扩展仓库根目录执行：
 
 ```powershell
-cd utils\smartgit-context-menu
 npx --yes @vscode/vsce package
 ```
 
 打包后会生成 `.vsix` 文件，例如：
 
 ```text
-smartgit-folder-opener-0.0.3.vsix
+smartgit-folder-opener-0.0.5.vsix
 ```
 
 ## 本地安装
@@ -74,19 +73,19 @@ smartgit-folder-opener-0.0.3.vsix
 安装到 Antigravity：
 
 ```powershell
-antigravity --install-extension .\smartgit-folder-opener-0.0.3.vsix --force
+antigravity --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
 ```
 
 安装到 VS Code：
 
 ```powershell
-code --install-extension .\smartgit-folder-opener-0.0.3.vsix --force
+code --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
 ```
 
 安装到 Cursor：
 
 ```powershell
-cursor --install-extension .\smartgit-folder-opener-0.0.3.vsix --force
+cursor --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
 ```
 
 macOS 也可以使用同样命令，只要当前 shell 能访问对应编辑器命令即可。
