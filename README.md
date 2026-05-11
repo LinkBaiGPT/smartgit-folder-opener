@@ -63,7 +63,7 @@ npx --yes @vscode/vsce package
 The command generates a `.vsix` package, for example:
 
 ```text
-smartgit-folder-opener-0.0.5.vsix
+smartgit-folder-opener-0.0.6.vsix
 ```
 
 ## Install Locally
@@ -71,19 +71,19 @@ smartgit-folder-opener-0.0.5.vsix
 Install into Antigravity:
 
 ```powershell
-antigravity --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
+antigravity --install-extension .\smartgit-folder-opener-0.0.6.vsix --force
 ```
 
 Install into VS Code:
 
 ```powershell
-code --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
+code --install-extension .\smartgit-folder-opener-0.0.6.vsix --force
 ```
 
 Install into Cursor:
 
 ```powershell
-cursor --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
+cursor --install-extension .\smartgit-folder-opener-0.0.6.vsix --force
 ```
 
 On macOS, use the same commands from a shell where the target editor command is available.

@@ -65,7 +65,7 @@ npx --yes @vscode/vsce package
 打包后会生成 `.vsix` 文件，例如：
 
 ```text
-smartgit-folder-opener-0.0.5.vsix
+smartgit-folder-opener-0.0.6.vsix
 ```
 
 ## 本地安装
@@ -73,19 +73,19 @@ smartgit-folder-opener-0.0.5.vsix
 安装到 Antigravity：
 
 ```powershell
-antigravity --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
+antigravity --install-extension .\smartgit-folder-opener-0.0.6.vsix --force
 ```
 
 安装到 VS Code：
 
 ```powershell
-code --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
+code --install-extension .\smartgit-folder-opener-0.0.6.vsix --force
 ```
 
 安装到 Cursor：
 
 ```powershell
-cursor --install-extension .\smartgit-folder-opener-0.0.5.vsix --force
+cursor --install-extension .\smartgit-folder-opener-0.0.6.vsix --force
 ```
 
 macOS 也可以使用同样命令，只要当前 shell 能访问对应编辑器命令即可。

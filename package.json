@@ -2,7 +2,7 @@
   "name": "smartgit-folder-opener",
   "displayName": "Open repository in SmartGit",
   "description": "Open the selected folder or its Git repository root in SmartGit from the Explorer context menu.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "Linkbai",
   "license": "MIT",
   "icon": "images/icon.png",
