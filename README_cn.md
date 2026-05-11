@@ -1,11 +1,11 @@
-# SmartGit Folder Opener
+# Open repository in SmartGit
 
-SmartGit Folder Opener 是一个放在 `utils/smartgit-context-menu` 目录下的本地 VS Code 兼容扩展。
+Open repository in SmartGit 是一个放在 `utils/smartgit-context-menu` 目录下的本地 VS Code 兼容扩展。
 
 它会在资源管理器右键菜单中增加命令：
 
 ```text
-SmartGit: Open Repository in SmartGit
+SmartGit: Open repository in SmartGit
 ```
 
 ## 功能

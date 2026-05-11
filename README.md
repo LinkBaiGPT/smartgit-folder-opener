@@ -1,11 +1,11 @@
-# SmartGit Folder Opener
+# Open repository in SmartGit
 
-SmartGit Folder Opener is a local VS Code-compatible extension stored under `utils/smartgit-context-menu`.
+Open repository in SmartGit is a local VS Code-compatible extension stored under `utils/smartgit-context-menu`.
 
 It adds an Explorer context menu command:
 
 ```text
-SmartGit: Open Repository in SmartGit
+SmartGit: Open repository in SmartGit
 ```
 
 ## Features
