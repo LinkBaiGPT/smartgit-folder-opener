@@ -1,0 +1,66 @@
+{
+  "name": "smartgit-folder-opener",
+  "displayName": "SmartGit Folder Opener",
+  "description": "Open the selected folder or its Git repository root in SmartGit from the Explorer context menu.",
+  "version": "0.0.3",
+  "publisher": "Linkbai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LinkBaiGPT/smartgit-folder-opener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LinkBaiGPT/smartgit-folder-opener/issues"
+  },
+  "homepage": "https://github.com/LinkBaiGPT/smartgit-folder-opener#readme",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "smartgit",
+    "git",
+    "repository",
+    "context-menu",
+    "explorer"
+  ],
+  "activationEvents": [
+    "onCommand:smartgitFolderOpener.openInSmartGit"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "smartgitFolderOpener.openInSmartGit",
+        "title": "Open Repository in SmartGit",
+        "category": "SmartGit",
+        "icon": "$(git-branch)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "smartgitFolderOpener.openInSmartGit",
+          "group": "navigation@90"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "SmartGit Folder Opener",
+      "properties": {
+        "smartgitFolderOpener.executablePath": {
+          "type": "string",
+          "default": "",
+          "description": "Optional SmartGit executable path. Leave empty to use the platform default: Windows uses C:\\Program Files\\SmartGit\\bin\\smartgit.exe, macOS uses open -a SmartGit."
+        },
+        "smartgitFolderOpener.openSelectedFolderWhenNoGitRoot": {
+          "type": "boolean",
+          "default": true,
+          "description": "Open the selected folder when no Git repository root can be found."
+        }
+      }
+    }
+  }
+}
